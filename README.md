@@ -1,10 +1,9 @@
 # Project Title
 
-Simple overview of use/purpose.
+A warehouse needs an autonomous robot that can follow a marked path between picking stations and avoid obstacles that workers leave in the aisles. 
+The robot must communicate its current state to a human supervisor at a glance.
 
 ## Description
-
-An in-depth paragraph about your project and overview of use.
 
 ## Getting Started
 
@@ -25,13 +24,29 @@ An in-depth paragraph about your project and overview of use.
 ```
 code blocks for commands
 ```
-## Robot requirements
+## Hardware
+
+| Component | Quantity | Role |
+| --- | --- | --- |
+| Raspberry Pi Pico | 1 | Microcontroller |
+| Custom power conditioner board | 1 | Voltage regulation |
+| LiPo 18650 battery | 2 | Power supply |
+| PiicoDev ultrasonic rangefinder (I²C) | 2 | Distance sensing |
+| PiicoDev SSD1306 OLED display (I²C) | 1 | Supervisor display |
+| PiicoDev VEML6040 colour sensor (I²C) | 1 | Surface / line colour |
+| Line‑following sensors (digital and analog GPIO) | as needed | Path detection |
+
+## Probe Brief
 
 ### Probe 1 — "follow a marked path"
+
+The robot will be able to follow a distinct red line displayed on warehouse floor. The marked floor will be five cm in widith.
+
 What colour and width is the line you'll design for? Why that choice given your colour sensor?
 What happens if the robot momentarily loses the line? Stop? Spin? Reverse?
 How tight can the curves be? What turning radius will your chassis support?
 Is the line continuous or can it have gaps?
+
 ### Probe 2 — "avoid obstacles"
 What counts as an obstacle? A box on the floor? A person? A wall?
 How close is too close? How did you arrive at that number?
