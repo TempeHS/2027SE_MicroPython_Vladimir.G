@@ -25,6 +25,25 @@ An in-depth paragraph about your project and overview of use.
 ```
 code blocks for commands
 ```
+## Robot requirements
+
+### Probe 1 — "follow a marked path"
+What colour and width is the line you'll design for? Why that choice given your colour sensor?
+What happens if the robot momentarily loses the line? Stop? Spin? Reverse?
+How tight can the curves be? What turning radius will your chassis support?
+Is the line continuous or can it have gaps?
+### Probe 2 — "avoid obstacles"
+What counts as an obstacle? A box on the floor? A person? A wall?
+How close is too close? How did you arrive at that number?
+What does the robot do when it sees one? Stop? Re-route? Wait?
+Two rangefinders point where? Why?
+### Probe 3 — "communicate its current state"
+List every distinct state the robot can be in. (Hint: there are more than three.)
+What information does a supervisor need at a glance vs on request?
+The OLED is 128×64. What can realistically fit?
+How will the supervisor know the robot has crashed vs finished vs is thinking?
+### Probe 4 — "who else cares?"
+Beyond the supervisor, who is affected by the robot's behaviour? (Floor workers? Maintenance? You as the developer?)
 
 ## Help
 
