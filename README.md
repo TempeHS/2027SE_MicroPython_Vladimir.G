@@ -40,12 +40,11 @@ code blocks for commands
 
 ### Probe 1 — "follow a marked path"
 
-The robot will be able to follow a distinct red line displayed on warehouse floor. The marked floor will be five cm in widith.
-
-What colour and width is the line you'll design for? Why that choice given your colour sensor?
-What happens if the robot momentarily loses the line? Stop? Spin? Reverse?
-How tight can the curves be? What turning radius will your chassis support?
-Is the line continuous or can it have gaps?
+The robot will be able to follow a distinct red line displayed on warehouse floor. The marked line will be ten cm in widith.
+PiicoDev VEML6040 colour sensor (I²C) is able to detect any colour since it has full RBGW, for simplicity the robot will follow a distinc red line.
+If the robot loses the line, it will stop, and reverse to the last known location of the line.
+The robot will expect only straight lines, the robot will have the ability to turn in a spot. The turning radious of the chassis is three hundred and sixty degrees.
+The robot will expect a continous line with no breaks.
 
 ### Probe 2 — "avoid obstacles"
 What counts as an obstacle? A box on the floor? A person? A wall?
