@@ -57,11 +57,13 @@ The robots ultrasonic sesnsors will be both posiitioned at the front at sliglt a
 
 The robot will have the following states, idle, following line, moving forwards, reversing, waiting, turning, emergency, communication.
 The supervisor will need the state and condition of the robot at glance, on request how close the robot is from tranporting items from one picking station to another.
-The OLED can realstically display the current state of the robot on top.
+The OLED can realstically display the current state of the robot on top,
 The supervisor will know if the robot has crashed if it is the emergency state, if the robot is finsihed it will go the communication state, update the supervisor before returning to idle, if the robot is thinking, the state will be updated via the communication state.
 
 ### Probe 4 — "who else cares?"
 Beyond the supervisor, who is affected by the robot's behaviour? (Floor workers? Maintenance? You as the developer?)
+
+The people that will be affected by the robots behaviours are floor workers, maintenance, anyone who walks across the warehouse will be impacted. The developer will be impacted by liability if the robot does not work via the code. Workers within the warehouse will be impacted as they adapt to the robots working schedule, speed and preformance.
 
 ## Help
 
